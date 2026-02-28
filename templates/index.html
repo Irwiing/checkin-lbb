@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check-in Simples</title>
+    <style>
+      body { font-family: Arial, sans-serif; text-align: center; margin-top: 40px; }
+      img { max-width: 280px; width: 100%; }
+      a { display: inline-block; margin-top: 20px; }
+    </style>
+  </head>
+  <body>
+    <h1>Escaneie o QR Code</h1>
+    <p>Abra o formulário no celular e digite seu nome.</p>
+    <img src="{{ url_for('static', filename='qrcode.png') }}" alt="QR Code para formulário" />
+    <a href="{{ url_for('form') }}">Ou clique aqui para abrir o formulário</a>
+  </body>
+</html>
